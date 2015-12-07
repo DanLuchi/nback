@@ -1,0 +1,29 @@
+{
+  "name": "nback",
+  "version": "0.0.1",
+  "description": "A javascript implementation of the n-back neuroscience assessment",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server --progress --colors --port 8080",
+    "build": "NODE_ENV=production webpack -p --progress --colors --profile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "n-back",
+    "neuroscience"
+  ],
+  "author": "Dan Luchi",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.3"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.5",
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.12.8",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
